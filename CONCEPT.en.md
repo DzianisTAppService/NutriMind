@@ -51,9 +51,26 @@ Thought reframing with fact-checking, grounding exercises, a personal **resource
 
 People with mild eating-related stress, exercise avoidance rooted in shame, and anxious perfectionism who want to **teach their brain to be kinder** — without diets, marathons, or “just smile” advice.
 
+## Mobile-first
+
+NutriMind is designed **primarily as a mobile app** (iOS / Android). Most use cases are short and in-the-moment: before a meal, after a workout, during anxiety, via a push reminder. The phone is always at hand — desktop is secondary.
+
+### UX principles
+
+- **Short sessions** — 30 seconds to 3 minutes; everything fits on one screen or in a bottom sheet
+- **One-handed navigation** — bottom tab bar, large tap targets, gestures instead of hover
+- **Bottom sheets for practices** — flows open from the bottom without leaving the main screen
+- **Push as part of the product** — reminders at the right moment, not “visit the site sometime”
+- **Voice input** — natural way to quickly log a thought or state on the go
+- **Offline journal** — entries available without network; sync optional
+
+### What this means for the prototype
+
+The current repo is a **mobile-first web prototype** (max width ~430px, bottom navigation, safe-area). It serves as a UX and screen reference for a future native app, not a desktop version of the product.
+
 ## Prototype scope (current)
 
-This repository contains a **clickable frontend prototype** with mock data:
+This repository contains a **clickable mobile-first web prototype** with mock data:
 
 - Onboarding
 - Main screen with interactive triangle
