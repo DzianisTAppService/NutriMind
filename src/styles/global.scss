@@ -1,0 +1,69 @@
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  background: $color-bg;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.appShell {
+  max-width: $max-width;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: $color-bg;
+}
+
+.pageContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 20px 100px;
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.pageSubtitle {
+  font-size: 14px;
+  color: $color-text-muted;
+  margin-bottom: 24px;
+}

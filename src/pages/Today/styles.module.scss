@@ -1,0 +1,80 @@
+@use '../../styles/variables' as *;
+
+.page {
+  padding-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.date {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.streak {
+  font-size: 14px;
+  font-weight: 600;
+  background: $color-food-light;
+  padding: 4px 12px;
+  border-radius: $radius-full;
+}
+
+.microBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin: 24px 0;
+  padding: 16px;
+  background: linear-gradient(135deg, $color-food, $color-thoughts);
+  color: $color-white;
+  border-radius: $radius-full;
+  font-size: 16px;
+  font-weight: 600;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+
+  &:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+  }
+}
+
+.firstTask {
+  background: $color-thoughts-light;
+  border-radius: $radius-md;
+  padding: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  button {
+    padding: 8px 24px;
+    background: $color-thoughts;
+    color: $color-white;
+    border-radius: $radius-full;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+.timeline {
+  margin-top: 8px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: $color-text-muted;
+}

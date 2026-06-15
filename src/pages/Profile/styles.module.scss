@@ -1,0 +1,178 @@
+@use '../../styles/variables' as *;
+
+.page {
+  padding-bottom: 20px;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: $color-thoughts-light;
+  color: $color-thoughts;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.mentor {
+  font-size: 13px;
+  color: $color-text-muted;
+  margin-top: 2px;
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.stat {
+  flex: 1;
+  background: $color-white;
+  border-radius: $radius-md;
+  padding: 14px;
+  text-align: center;
+  box-shadow: $shadow-soft;
+}
+
+.statValue {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: $color-thoughts;
+}
+
+.statLabel {
+  font-size: 11px;
+  color: $color-text-muted;
+  margin-top: 2px;
+  display: block;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.counter {
+  font-size: 12px;
+  color: $color-text-muted;
+}
+
+.resourceScroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.resourceCard {
+  flex-shrink: 0;
+  width: 200px;
+  background: $color-white;
+  border-radius: $radius-md;
+  padding: 14px;
+  box-shadow: $shadow-soft;
+}
+
+.resourceTag {
+  font-size: 11px;
+  font-weight: 600;
+  color: $color-thoughts;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.resourceText {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.settingsList {
+  list-style: none;
+  background: $color-white;
+  border-radius: $radius-md;
+  overflow: hidden;
+  box-shadow: $shadow-soft;
+
+  li {
+    padding: 14px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid $color-border;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.02);
+    }
+  }
+}
+
+.proBanner {
+  background: linear-gradient(135deg, rgba(155, 89, 182, 0.1), rgba(245, 166, 35, 0.1));
+  border-radius: $radius-md;
+  padding: 20px;
+  text-align: center;
+}
+
+.proTitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.proDesc {
+  font-size: 13px;
+  color: $color-text-muted;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.proBtn {
+  padding: 10px 28px;
+  background: $color-white;
+  border-radius: $radius-full;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-thoughts;
+  box-shadow: $shadow-soft;
+  transition: transform 0.15s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}

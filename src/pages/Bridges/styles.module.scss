@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+
+.page {
+  padding-bottom: 20px;
+}
+
+.empty {
+  text-align: center;
+  color: $color-text-muted;
+  font-size: 14px;
+  padding: 40px 20px;
+  line-height: 1.5;
+}
+
+.resolvedSection {
+  margin-top: 24px;
+}
+
+.resolvedTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-text-muted;
+  margin-bottom: 12px;
+}
