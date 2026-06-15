@@ -74,7 +74,7 @@ export const ProfilePage = memo(function ProfilePage() {
 
       <div className={styles.proBanner}>
         <p className={styles.proTitle}>
-          7 дней с Eudaemon — попробуйте Pro бесплатно
+          7 дней с NutriMind — попробуйте Pro бесплатно
         </p>
         <p className={styles.proDesc}>
           40+ практик, безлимитный Банк, голосовой ввод
